@@ -15,8 +15,10 @@ export default function PageNavBar() {
         variant="light"
         sticky="top"
       >
-        <Navbar.Brand href="/homepage">
-          <img src={Logo} id="tancell-logo"></img>
+        <Navbar.Brand>
+          <NavLink className="nav-link" to="/homepage">
+            <img src={Logo} id="tancell-logo"></img>
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
